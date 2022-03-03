@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container .flexLeft {
+    background-color: blue;
+    flex-basis: 20%;
+    max-width: 150px;
+
+}
+
+.container .flexRight {
+    background-color: blueviolet;
+    flex-basis: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRight > * {
+    flex-basis: 100%;
+}
+
+.equal {
+    display: flex;
+    gap: 1rem;
+    border: 5px solid black;
+    
+}
+.equal > * {
+    flex: 1; 
+}
+
+.direction {
+    display: flex;
+    border: 5px solid rgb(168, 168, 168);
+    gap: 1rem;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.direction > * {
+    flex: 1;
+}
+
+.boxSm {
+    padding: 10px;
+    background-color: brown;
+    margin: 5px;
+}
